@@ -6,11 +6,17 @@ import mnist
 from sklearn.datasets import fetch_openml
 
 
-#train data
+
 
 mnist_data = fetch_openml('mnist_784' , version = 1 , parser = 'auto')
-x_train = mnist_data.data
-y_train = mnist_data.target
+x = mnist_data.data
+y = mnist_data.target
 
+#train data
+x_train = x[:60000] #grabe the first 60000 data for training
+y_train = y[:60000]
 
-print(x_train.shape , y_train.shape )
+#test data
+
+x_test = x[60000:]
+y_test = y[60000:]
