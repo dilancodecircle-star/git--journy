@@ -24,4 +24,4 @@ plt.show()
 x = np.array([1,2,3,4,5])
 y = np.array([10,20,15,40,2])
 plt.plot(x,y, marker = "o", markersize = 10, markerfacecolor = "black", linestyle = " ", linewidth = 2)
-plt.show()
+
